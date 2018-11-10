@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,10 +8,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <!--layoud_gravity centers the widget to the screen-->
+    <!--gravity centers the content in the widget-->
     <TextView
         android:id="@+id/textViewRandomImages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:text="Random Images" />
 
     <ImageView
@@ -19,11 +25,19 @@
         android:layout_height="200dp"
         android:src="@drawable/bartsimpson"/>
 
+
+    <!--match_parent fits screen size-->
+    <!--wrap content fits content-->
     <Button
         android:id="@+id/charaButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Show Next Image" />
 
+    <Button
+        android:id="@+id/firstImgButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show First Image" />
 
 </LinearLayout>
